@@ -14,7 +14,7 @@ resource "vault_auth_backend" "approle" {
 
 
 module "example" {
-  source = "../../"
+  source = "devops-rob/approle/vault"
 
   approle_name = "example"
 
