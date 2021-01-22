@@ -2,11 +2,11 @@
 
 The Vault AppRole Terraform module configures HashiCorp Vault AppRoles and associated policies for machines or applications to authenticate against Vault. For more information on AppRole, refer to the [documentation.](https://www.vaultproject.io/docs/auth/approle)
 
-### Prerequisites
+## Prerequisites
 
 This module requires the AppRole auth method to be enabled and configured at a path of your choice.
 
-### Usage
+## Usage
 
 This module supports the creation of Vault policies written in HCL and JSON.  These policies can be stored in any location on the machine running the `terraform apply`.  By default, the module will look in the current working directory for any policy files. This can be changed by setting the `policies_path` variable to the absolute path of your Vault policy files. The module will write these policies into Vault.
 
@@ -40,3 +40,13 @@ module "example" {
   ]
 }
 ```
+
+## License
+
+Licensed under the Apache License, Version 2.0 (the "License").
+
+You may obtain a copy of the License at [apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0).
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an _"AS IS"_ basis, without WARRANTIES or conditions of any kind, either express or implied.
+
+See the License for the specific language governing permissions and limitations under the License.
